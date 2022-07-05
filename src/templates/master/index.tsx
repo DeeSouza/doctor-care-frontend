@@ -1,3 +1,4 @@
+import Header from "../../organisms/header";
 import { Main } from "./styles";
 
 type Props = {
@@ -5,7 +6,12 @@ type Props = {
 };
 
 const MasterTemplate = ({ children }: Props) => {
-  return <Main>{children}</Main>;
+  return (
+    <>
+      <Header />
+      <Main>{children}</Main>
+    </>
+  );
 };
 
 export default MasterTemplate;
