@@ -2,7 +2,7 @@ import { Button } from "./styles";
 
 const ButtonOpenMenu = () => {
   return (
-    <Button type="button">
+    <Button type="button" title="Abrir Menu do Site">
       <span></span>
     </Button>
   );

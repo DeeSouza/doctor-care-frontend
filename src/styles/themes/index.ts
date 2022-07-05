@@ -8,7 +8,6 @@ const { theme, createTheme } = createStitches({
       secondary: "#DCE9E2",
 
       gray300: "#495057",
-      gray400: "#495057",
       gray500: "#212529",
 
       beige: "#FFFAF1",
