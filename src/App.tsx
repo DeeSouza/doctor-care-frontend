@@ -1,5 +1,10 @@
+import MasterTemplate from "./templates/master";
+import { globalStyles } from "./styles/global";
+
 function App() {
-  return <div>Teste</div>;
+  globalStyles();
+
+  return <MasterTemplate>H1</MasterTemplate>;
 }
 
 export default App;
