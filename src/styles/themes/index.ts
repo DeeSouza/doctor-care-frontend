@@ -7,6 +7,7 @@ const { theme, createTheme } = createStitches({
       primary: "#00856F",
       secondary: "#DCE9E2",
 
+      gray100: "#F7F9F9",
       gray300: "#495057",
       gray500: "#212529",
 

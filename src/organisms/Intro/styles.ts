@@ -4,6 +4,8 @@ import { theme } from "../../styles/themes";
 export const Section = styled("section", {
   paddingTop: "40px",
   textAlign: "center",
+  padding: "40px 24px 0",
+  position: "relative",
 
   h6: {
     color: theme.colors.primary,

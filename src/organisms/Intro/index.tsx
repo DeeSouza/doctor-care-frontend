@@ -2,6 +2,7 @@ import ButtonAppointment from "../../molecules/ButtonAppointment";
 import { Section } from "./styles";
 
 import doctorCareWomanPatient from "../../assets/doctor-care-paciente-mulher.png";
+import Stats from "../../molecules/Stats";
 
 const Intro = () => {
   return (
@@ -21,6 +22,8 @@ const Intro = () => {
         src={doctorCareWomanPatient}
         alt="Doctor Care - Mulher Paciente Sorrindo"
       />
+
+      <Stats />
     </Section>
   );
 };
