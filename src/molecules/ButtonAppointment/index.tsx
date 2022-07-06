@@ -1,5 +1,5 @@
 import { Button } from "./styles";
-import iconWhatsapp from "../assets/icon-whatsapp.svg";
+import iconWhatsapp from "../../assets/icon-whatsapp.svg";
 
 const ButtonAppointment = () => {
   return (

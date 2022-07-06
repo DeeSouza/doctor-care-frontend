@@ -1,5 +1,5 @@
 import { styled } from "@stitches/react";
-import { theme } from "../styles/themes";
+import { theme } from "../../styles/themes";
 
 export const Button = styled("button", {
   display: "flex",

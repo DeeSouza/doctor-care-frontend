@@ -1,4 +1,4 @@
-import Intro from "../organisms/intro";
+import Intro from "../organisms/Intro";
 
 const Home = () => {
   return (

@@ -1,4 +1,4 @@
-import Header from "../../organisms/header";
+import Header from "../../organisms/Header";
 import { Main } from "./styles";
 
 type Props = {
