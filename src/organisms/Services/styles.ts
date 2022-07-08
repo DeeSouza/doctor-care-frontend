@@ -3,16 +3,16 @@ import { theme } from "../../styles/themes";
 
 export const Section = styled("section", {
   backgroundColor: theme.colors.gray100,
-  padding: "0 24px",
+  padding: "0 24px 100px",
   marginTop: "-218px",
   paddingTop: " 218px",
 
-  h2: {
+  "> h2": {
     marginTop: "100px",
     textAlign: "center",
   },
 
-  p: {
+  "> p": {
     fontSize: "1.875rem",
     textAlign: "center",
     fontWeight: 700,

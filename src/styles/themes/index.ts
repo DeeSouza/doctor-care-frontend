@@ -4,6 +4,7 @@ const { theme, createTheme } = createStitches({
   theme: {
     colors: {
       background: "#DCE9E2",
+      greenHover: "#00453A",
       primary: "#00856F",
       secondary: "#DCE9E2",
 

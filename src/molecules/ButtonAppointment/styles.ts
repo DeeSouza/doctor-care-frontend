@@ -14,4 +14,9 @@ export const Button = styled("button", {
   height: "52px",
   margin: "auto",
   fontWeight: 700,
+  transition: "all 0.25s ease-in-out",
+
+  "&:hover": {
+    background: theme.colors.greenHover,
+  },
 });
