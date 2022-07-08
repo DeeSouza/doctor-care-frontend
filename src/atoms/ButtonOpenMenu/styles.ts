@@ -1,7 +1,23 @@
 import { styled } from "@stitches/react";
+import * as ToggleButton from "@radix-ui/react-toggle";
+
 import { theme } from "../../styles/themes";
 
-export const Button = styled("button", {
+export const Button = styled(ToggleButton.Root, {
+  variants: {
+    display: {
+      true: {
+        span: {
+          backgroundColor: "#FFFFFF",
+
+          "&:before, &:after": {
+            backgroundColor: "#FFFFFF",
+          },
+        },
+      },
+    },
+  },
+
   width: "40px",
   height: "40px",
   padding: "12px 10px",
@@ -17,6 +33,7 @@ export const Button = styled("button", {
     display: "flex",
     justifyContent: "flex-end",
     alignItems: "center",
+    transition: "all 0.25s ease-in-out",
 
     "&:before, &:after": {
       content: "",
