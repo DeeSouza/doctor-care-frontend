@@ -1,3 +1,4 @@
+import Footer from "../../organisms/Footer";
 import Header from "../../organisms/Header";
 import { Main } from "./styles";
 
@@ -10,6 +11,7 @@ const MasterTemplate = ({ children }: Props) => {
     <>
       <Header />
       <Main>{children}</Main>
+      <Footer />
     </>
   );
 };

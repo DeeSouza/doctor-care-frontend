@@ -16,6 +16,7 @@ const Intro = () => {
           Os médicos da DoctorCare vão além dos sintomas para tratar a causa
           raiz de sua doença e proporcionar uma cura a longo prazo.
         </h5>
+
         <ButtonAppointment />
       </div>
 

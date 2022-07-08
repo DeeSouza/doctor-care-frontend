@@ -12,18 +12,23 @@ export const Section = styled("section", {
     marginBottom: "32px",
   },
 
-  "div[role='column']": {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
+  address: {
+    fontStyle: "normal",
 
-    "& + div": {
-      marginTop: "16px",
-      marginBottom: "32px",
-    },
+    "div[role='column']": {
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
 
-    span: {
-      marginLeft: "8px",
+      "& + div": {
+        marginTop: "16px",
+        marginBottom: "32px",
+      },
+
+      "a, span": {
+        marginLeft: "8px",
+        color: theme.colors.gray300,
+      },
     },
   },
 

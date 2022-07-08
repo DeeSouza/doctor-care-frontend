@@ -10,16 +10,22 @@ const Contact = () => {
     <Section>
       <h2>Entre em contato com a gente!</h2>
 
-      <div role="column">
-        <img src={iconMap} alt="Ícone do Mapa do Local" />
-        <span>R. Amauri Souza, 346</span>
-      </div>
+      <address>
+        <div role="column">
+          <img src={iconMap} alt="Ícone do Mapa do Local" />
+          <span>R. Amauri Souza, 346</span>
+        </div>
 
-      <div role="column">
-        <img src={iconEmail} alt="Ícone do Mapa de E-mail" />
-        <span>contato@beautysalon.com</span>
-      </div>
-
+        <div role="column">
+          <img src={iconEmail} alt="Ícone do Mapa de E-mail" />
+          <a
+            href="mailto:contato@beautysalon.com"
+            title="Clique aqui para enviar um e-mail para Doctor Care"
+          >
+            contato@doctorcare.com
+          </a>
+        </div>
+      </address>
       <ButtonAppointment />
 
       <img

@@ -28,6 +28,10 @@ export const Section = styled("section", {
       fontWeight: 400,
     },
 
+    button: {
+      margin: "auto",
+    },
+
     "> img": {
       marginTop: "60px",
       verticalAlign: "middle",
