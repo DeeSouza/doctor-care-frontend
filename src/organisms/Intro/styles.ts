@@ -7,28 +7,30 @@ export const Section = styled("section", {
   padding: "40px 24px 0",
   position: "relative",
 
-  h6: {
-    color: theme.colors.primary,
-  },
+  div: {
+    h6: {
+      color: theme.colors.primary,
+    },
 
-  h1: {
-    color: theme.colors.gray500,
-    fontSize: "2.43rem",
-    marginTop: "16px",
-    fontWeight: 700,
-    lineHeight: 1.3,
-  },
+    h1: {
+      color: theme.colors.gray500,
+      fontSize: "2.43rem",
+      marginTop: "16px",
+      fontWeight: 700,
+      lineHeight: 1.3,
+    },
 
-  h5: {
-    color: theme.colors.gray300,
-    fontSize: "1.28rem",
-    marginTop: "24px",
-    marginBottom: "32px",
-    fontWeight: 400,
-  },
+    h5: {
+      color: theme.colors.gray300,
+      fontSize: "1.28rem",
+      marginTop: "24px",
+      marginBottom: "32px",
+      fontWeight: 400,
+    },
 
-  "> img": {
-    marginTop: "60px",
-    verticalAlign: "middle",
+    "> img": {
+      marginTop: "60px",
+      verticalAlign: "middle",
+    },
   },
 });

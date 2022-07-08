@@ -1,4 +1,5 @@
 import About from "../organisms/About";
+import Contact from "../organisms/Contact";
 import Intro from "../organisms/Intro";
 import Services from "../organisms/Services";
 
@@ -8,6 +9,7 @@ const Home = () => {
       <Intro />
       <Services />
       <About />
+      <Contact />
     </div>
   );
 };

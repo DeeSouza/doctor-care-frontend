@@ -12,7 +12,6 @@ export const Button = styled("button", {
   borderRadius: "40px",
   width: "263px",
   height: "52px",
-  margin: "auto",
   fontWeight: 700,
   transition: "all 0.25s ease-in-out",
 
