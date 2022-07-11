@@ -5,6 +5,5 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "./docs",
-    assetsDir: "doctor-care-frontend/assets",
   },
 });
