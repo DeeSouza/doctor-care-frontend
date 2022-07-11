@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 const WebRoutes = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/doctor-care-frontend" element={<Home />} />
     </Routes>
   </BrowserRouter>
 );
