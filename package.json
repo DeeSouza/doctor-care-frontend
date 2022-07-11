@@ -7,7 +7,6 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
-  "homepage": "https://deesouza.github.io/doctor-care-frontend/doctor-care-frontend",
   "dependencies": {
     "@radix-ui/react-toggle": "^0.1.4",
     "@stitches/react": "^1.2.8",
