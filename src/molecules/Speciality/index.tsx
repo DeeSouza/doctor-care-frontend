@@ -2,10 +2,10 @@ import { Container } from "./styles";
 
 import okIcon from "assets/ok.svg";
 
-type Props = {
+interface Props {
   title: string;
   text: string;
-};
+}
 
 const Speciality = ({ title, text }: Props) => {
   return (

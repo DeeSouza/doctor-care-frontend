@@ -9,8 +9,8 @@ import { Container } from "./styles";
 const Header = () => {
   const { toggleMenu } = useMenu();
 
-  function switchLogo(value: boolean) {
-    return value ? (
+  function switchLogo(value: string) {
+    return value === "opened" ? (
       <img src={doctorCareLogoWhite} alt="Doctor Care Logo" />
     ) : (
       <img src={doctorCareLogo} alt="Doctor Care Logo" />

@@ -4,9 +4,9 @@ import { MainContextProvider } from "contexts/MainContextProvider";
 
 import { Main } from "./styles";
 
-type Props = {
+interface Props {
   children: React.ReactNode;
-};
+}
 
 const MasterTemplate = ({ children }: Props) => {
   return (

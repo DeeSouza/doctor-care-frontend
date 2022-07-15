@@ -1,9 +1,9 @@
 import { Container } from "./styles";
 
-type Props = {
+interface Props {
   title: string;
   subtitle: string;
-};
+}
 
 const Card = ({ title, subtitle }: Props) => {
   return (

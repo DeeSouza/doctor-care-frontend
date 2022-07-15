@@ -4,10 +4,10 @@ import { theme } from "../../styles/themes";
 export const Container = styled("header", {
   variants: {
     backgroundColor: {
-      true: {
+      opened: {
         backgroundColor: theme.colors.primary,
       },
-      false: {
+      closed: {
         backgroundColor: theme.colors.background,
       },
     },
