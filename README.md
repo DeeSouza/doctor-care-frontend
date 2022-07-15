@@ -8,7 +8,7 @@
 
 ### Live Preview
 
-
+[Click here to preview](https://deesouza.github.io/doctor-care-frontend/)
 
 ### Author
 
