@@ -1,7 +1,7 @@
-import About from "../organisms/About";
-import Contact from "../organisms/Contact";
-import Intro from "../organisms/Intro";
-import Services from "../organisms/Services";
+import About from "organisms/About";
+import Contact from "organisms/Contact";
+import Intro from "organisms/Intro";
+import Services from "organisms/Services";
 
 const Home = () => {
   return (

@@ -1,6 +1,6 @@
-import Footer from "../../organisms/Footer";
-import Header from "../../organisms/Header";
-import { MainContextProvider } from "../../contexts/MainContextProvider";
+import Footer from "organisms/Footer";
+import Header from "organisms/Header";
+import { MainContextProvider } from "contexts/MainContextProvider";
 
 import { Main } from "./styles";
 

@@ -1,7 +1,7 @@
-import Title from "../../atoms/Title";
+import Title from "atoms/Title";
 import { Section } from "./styles";
 
-import imageAboutUs from "../../assets/doctor-care-quem-somos-e-porque-existimos.png";
+import imageAboutUs from "assets/doctor-care-quem-somos-e-porque-existimos.png";
 
 const About = () => {
   return (

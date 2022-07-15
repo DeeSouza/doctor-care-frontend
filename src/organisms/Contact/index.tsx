@@ -1,9 +1,10 @@
-import ButtonAppointment from "../../molecules/ButtonAppointment";
-import { Section } from "./styles";
+import ButtonAppointment from "molecules/ButtonAppointment";
 
-import iconMap from "../../assets/icon-map.svg";
-import iconEmail from "../../assets/icon-email.svg";
-import iconManAppointment from "../../assets/doctor-care-homem-agendando-consulta.png";
+import iconMap from "assets/icon-map.svg";
+import iconEmail from "assets/icon-email.svg";
+import iconManAppointment from "assets/doctor-care-homem-agendando-consulta.png";
+
+import { Section } from "./styles";
 
 const Contact = () => {
   return (

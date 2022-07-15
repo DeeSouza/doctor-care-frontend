@@ -1,5 +1,5 @@
-import Title from "../../atoms/Title";
-import CardsSpeciality from "../../molecules/CardsSpeciality";
+import Title from "atoms/Title";
+import CardsSpeciality from "molecules/CardsSpeciality";
 
 import { Section } from "./styles";
 

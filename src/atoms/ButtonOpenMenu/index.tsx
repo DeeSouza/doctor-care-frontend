@@ -12,7 +12,11 @@ const ButtonOpenMenu = () => {
       display={toggleMenu}
       aria-label="Abrir Menu do Site"
     >
-      <span></span>
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </Button>
   );
 };

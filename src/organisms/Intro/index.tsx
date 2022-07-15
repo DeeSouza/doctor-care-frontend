@@ -1,8 +1,9 @@
-import ButtonAppointment from "../../molecules/ButtonAppointment";
-import { Section } from "./styles";
+import ButtonAppointment from "molecules/ButtonAppointment";
+import Stats from "molecules/Stats";
 
-import doctorCareWomanPatient from "../../assets/doctor-care-paciente-mulher.png";
-import Stats from "../../molecules/Stats";
+import doctorCareWomanPatient from "assets/doctor-care-paciente-mulher.png";
+
+import { Section } from "./styles";
 
 const Intro = () => {
   return (

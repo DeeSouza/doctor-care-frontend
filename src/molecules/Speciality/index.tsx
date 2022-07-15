@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-import okIcon from "../../assets/ok.svg";
+import okIcon from "assets/ok.svg";
 
 type Props = {
   title: string;

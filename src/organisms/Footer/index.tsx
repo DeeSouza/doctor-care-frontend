@@ -1,9 +1,9 @@
-import { Container } from "./styles";
+import logoDoctorCareWhite from "assets/doctor-care-light-logo.svg";
+import iconInstagram from "assets/instagram.svg";
+import iconFacebook from "assets/facebook.svg";
+import iconYoutube from "assets/youtube.svg";
 
-import logoDoctorCareWhite from "../../assets/doctor-care-light-logo.svg";
-import iconInstagram from "../../assets/instagram.svg";
-import iconFacebook from "../../assets/facebook.svg";
-import iconYoutube from "../../assets/youtube.svg";
+import { Container } from "./styles";
 
 const Footer = () => {
   return (

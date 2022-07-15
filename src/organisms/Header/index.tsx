@@ -1,8 +1,8 @@
-import { useMenu } from "../../contexts/MainContextProvider";
+import { useMenu } from "contexts/MainContextProvider";
 
-import ButtonOpenMenu from "../../atoms/ButtonOpenMenu";
-import doctorCareLogo from "../../assets/doctor-care-logo.svg";
-import doctorCareLogoWhite from "../../assets/doctor-care-light-logo.svg";
+import ButtonOpenMenu from "atoms/ButtonOpenMenu";
+import doctorCareLogo from "assets/doctor-care-logo.svg";
+import doctorCareLogoWhite from "assets/doctor-care-light-logo.svg";
 
 import { Container } from "./styles";
 
