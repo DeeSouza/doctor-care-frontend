@@ -1,23 +1,23 @@
 import { useContext, createContext, useState } from "react";
 
-interface MainContextData {
-  handleToggleMenu: () => void;
-  toggleMenu: string;
-}
-
 interface MainContextProps {
   children: React.ReactNode;
 }
 
-type AnimationButton = "opened" | "closed" | "";
+export type AnimationButton = boolean | undefined;
+
+interface MainContextData {
+  handleToggleMenu: () => void;
+  toggleMenu: AnimationButton;
+}
 
 export const MainContext = createContext({} as MainContextData);
 
 export const MainContextProvider = ({ children }: MainContextProps) => {
-  const [toggleMenu, setToggleMenu] = useState<AnimationButton>("");
+  const [toggleMenu, setToggleMenu] = useState<AnimationButton>(undefined);
 
   function handleToggleMenu() {
-    setToggleMenu((state) => (state === "opened" ? "closed" : "opened"));
+    setToggleMenu((state) => !state);
   }
 
   return (

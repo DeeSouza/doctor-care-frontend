@@ -1,13 +1,13 @@
 import { styled } from "@stitches/react";
-import { theme } from "../../styles/themes";
+import { theme } from "styles/themes";
 
 export const Container = styled("header", {
   variants: {
     backgroundColor: {
-      opened: {
+      true: {
         backgroundColor: theme.colors.primary,
       },
-      closed: {
+      false: {
         backgroundColor: theme.colors.background,
       },
     },

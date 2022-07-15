@@ -1,4 +1,4 @@
-import { keyframes, styled } from "@stitches/react";
+import { keyframes, styled, VariantProps } from "@stitches/react";
 import * as ToggleButton from "@radix-ui/react-toggle";
 
 import { theme } from "styles/themes";
@@ -46,7 +46,7 @@ const lastSpanOff = keyframes({
 export const Button = styled(ToggleButton.Root, {
   variants: {
     animation: {
-      opened: {
+      true: {
         div: {
           animation: `${divOn} .25s forwards`,
           animationDelay: ".25s",
@@ -70,7 +70,7 @@ export const Button = styled(ToggleButton.Root, {
           },
         },
       },
-      closed: {
+      false: {
         animation: `${divOff} .25s backwards`,
         animationDelay: "1s",
 
@@ -92,9 +92,6 @@ export const Button = styled(ToggleButton.Root, {
         },
       },
     },
-  },
-  defaultVariants: {
-    animation: "",
   },
 
   width: "40px",
