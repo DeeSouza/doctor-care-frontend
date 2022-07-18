@@ -49,14 +49,14 @@ export const Button = styled(ToggleButton.Root, {
       true: {
         div: {
           animation: `${divOn} .25s forwards`,
-          animationDelay: ".25s",
+          animationDelay: ".5s",
 
           span: {
             backgroundColor: "#FFFFFF",
 
             "&:first-child": {
               animation: `${spanOn} .25s forwards`,
-              animationDelay: "0.35s",
+              animationDelay: ".15s",
             },
 
             "&:nth-child(2)": {
@@ -65,7 +65,7 @@ export const Button = styled(ToggleButton.Root, {
             },
 
             "&:last-child": {
-              animation: `${lastSpanOn} .25s forwards`,
+              animation: `${lastSpanOn} .5s forwards`,
             },
           },
         },
