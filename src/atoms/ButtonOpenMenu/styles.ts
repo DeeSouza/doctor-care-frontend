@@ -3,32 +3,32 @@ import * as ToggleButton from "@radix-ui/react-toggle";
 
 import { theme } from "styles/themes";
 
-const divOn = keyframes({
+const rotateBarsOn = keyframes({
   "0%": { transform: "rotate3d(0, 0, 1, 0deg)" },
   "100%": { transform: "rotate3d(0, 0, 1, 765deg)" },
 });
 
-const divOff = keyframes({
+const rotateBarsOff = keyframes({
   "0%": { transform: "rotate3d(0, 0, 1, 765deg)" },
   "100%": { transform: "rotate3d(0, 0, 1, 0deg)" },
 });
 
-const spanOn = keyframes({
+const firstSpanOn = keyframes({
   "0%": { transform: "translate3d(0, 0, 0)" },
   "100%": { transform: "translate3d(0, 8px, 0)" },
 });
 
-const spanOff = keyframes({
+const firstSpanOff = keyframes({
   "0%": { transform: "translate3d(0, 8px, 0)" },
   "100%": { transform: "translate3d(0, 0px, 0)" },
 });
 
-const xSpanOn = keyframes({
+const middleSpanOn = keyframes({
   "0%": { transform: "rotate3d(0, 0, 1, 0deg)" },
   "100%": { transform: "rotate3d(0, 0, 1, 90deg)" },
 });
 
-const xSpanOff = keyframes({
+const middleSpanOff = keyframes({
   "0%": { transform: "rotate3d(0, 0, 1, 90deg)" },
   "100%": { transform: "rotate3d(0, 0, 1, 0deg)" },
 });
@@ -48,44 +48,44 @@ export const Button = styled(ToggleButton.Root, {
     animation: {
       true: {
         div: {
-          animation: `${divOn} .25s forwards`,
+          animation: `${rotateBarsOn} .25s forwards`,
           animationDelay: ".5s",
 
           span: {
             backgroundColor: "#FFFFFF",
 
-            "&:first-child": {
-              animation: `${spanOn} .25s forwards`,
+            "&:nth-child(1)": {
+              animation: `${firstSpanOn} .25s forwards`,
               animationDelay: ".15s",
             },
 
             "&:nth-child(2)": {
-              animation: `${xSpanOn} .25s forwards`,
+              animation: `${middleSpanOn} .25s forwards`,
               animationDelay: "1.25s",
             },
 
-            "&:last-child": {
+            "&:nth-child(3)": {
               animation: `${lastSpanOn} .5s forwards`,
             },
           },
         },
       },
       false: {
-        animation: `${divOff} .25s backwards`,
+        animation: `${rotateBarsOff} .25s backwards`,
         animationDelay: "1s",
 
         span: {
-          "&:first-child": {
-            animation: `${spanOff} .25s backwards`,
+          "&:nth-child(1)": {
+            animation: `${firstSpanOff} .25s backwards`,
             animationDelay: "1.25s",
           },
 
           "&:nth-child(2)": {
-            animation: `${xSpanOff} .25s backwards`,
+            animation: `${middleSpanOff} .25s backwards`,
             animationDelay: "0.25s",
           },
 
-          "&:last-child": {
+          "&:nth-child(3)": {
             animation: `${lastSpanOff} .25s backwards`,
             animationDelay: "1.5s",
           },
