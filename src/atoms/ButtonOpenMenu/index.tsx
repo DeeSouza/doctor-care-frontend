@@ -1,4 +1,4 @@
-import { useMenu } from "../../contexts/MainContextProvider";
+import { useMenu } from "contexts/MainContextProvider";
 import { Button } from "./styles";
 
 const ButtonOpenMenu = () => {
