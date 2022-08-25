@@ -19,6 +19,10 @@ const globalStyles = globalCss({
   body: {
     backgroundColor: theme.colors.background,
     font: "normal 400 1rem/1.5 'DM Sans', sans-serif",
+
+    "&.no-scrollbars": {
+      overflow: "hidden",
+    },
   },
 
   button: {

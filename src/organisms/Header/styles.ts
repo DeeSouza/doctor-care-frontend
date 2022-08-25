@@ -1,6 +1,26 @@
 import { styled } from "@stitches/react";
 import { theme } from "styles/themes";
 
+export const Navigation = styled("nav", {
+  variants: {
+    toggleMenu: {
+      true: {
+        height: "100%",
+      },
+      false: {
+        height: "0%",
+        transition: "all 0.35s ease-in-out",
+      },
+    },
+  },
+
+  backgroundColor: theme.colors.primary,
+  minHeight: "72px",
+  height: "0%",
+  overflow: "hidden",
+  transition: "all 0.65s ease-in-out 0.25s",
+});
+
 export const Container = styled("header", {
   variants: {
     backgroundColor: {
@@ -9,6 +29,7 @@ export const Container = styled("header", {
       },
       false: {
         backgroundColor: theme.colors.background,
+        transition: "all 0.05s ease",
       },
     },
   },
