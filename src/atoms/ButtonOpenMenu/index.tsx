@@ -2,7 +2,7 @@ import { useMenu } from "contexts/MainContextProvider";
 import { Button } from "./styles";
 
 const ButtonOpenMenu = () => {
-  const { handleToggleMenu, toggleMenu } = useMenu();
+  const { handleToggleMenu, toggleMenu, fixedMenu } = useMenu();
 
   return (
     <Button
@@ -11,6 +11,7 @@ const ButtonOpenMenu = () => {
       onClick={handleToggleMenu}
       aria-label="Abrir Menu do Site"
       animation={toggleMenu}
+      fixedMenu={fixedMenu}
     >
       <div>
         <span></span>

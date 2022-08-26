@@ -7,17 +7,6 @@ export const List = styled("ul", {
 });
 
 export const ListItem = styled("li", {
-  "& + li": {
-    marginTop: "48px",
-  },
-
-  a: {
-    fontSize: "1.7rem",
-    fontWeight: 700,
-    color: "#FFF",
-    display: "block",
-  },
-
   variants: {
     button: {
       true: {
@@ -31,5 +20,34 @@ export const ListItem = styled("li", {
         },
       },
     },
+
+    social: {
+      true: {
+        paddingTop: "32px",
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "row",
+        gap: "32px",
+
+        a: {
+          transition: "all 0.25 ease-in-out",
+
+          "&:hover": {
+            opacity: 0.6,
+          },
+        },
+      },
+    },
+  },
+
+  "& + li": {
+    marginTop: "48px",
+  },
+
+  a: {
+    fontSize: "1.7rem",
+    fontWeight: 700,
+    color: "#FFF",
+    display: "block",
   },
 });

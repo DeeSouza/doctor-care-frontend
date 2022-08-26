@@ -1,8 +1,8 @@
 import Footer from "organisms/Footer";
 import Header from "organisms/Header";
-import { MainContextProvider } from "contexts/MainContextProvider";
+import Main from "organisms/Main";
 
-import { Main } from "./styles";
+import { MainContextProvider } from "contexts/MainContextProvider";
 
 interface Props {
   children: React.ReactNode;

@@ -1,4 +1,4 @@
-import { AnimationButton, useMenu } from "contexts/MainContextProvider";
+import { useMenu } from "contexts/MainContextProvider";
 
 import ButtonOpenMenu from "atoms/ButtonOpenMenu";
 import Menu from "organisms/Menu";
@@ -7,27 +7,14 @@ import doctorCareLogo from "assets/doctor-care-logo.svg";
 import doctorCareLogoWhite from "assets/doctor-care-light-logo.svg";
 
 import { Container, Navigation } from "./styles";
-import { useEffect } from "react";
 
 const Header = () => {
-  const { toggleMenu } = useMenu();
+  const { toggleMenu, fixedMenu } = useMenu();
 
-  useEffect(() => {
-    const bodyElement = document.querySelector("body");
+  function switchLogo() {
+    const toggle = toggleMenu || fixedMenu;
 
-    if (!bodyElement) {
-      return;
-    }
-
-    if (toggleMenu) {
-      bodyElement.classList.add("no-scrollbars");
-    } else {
-      bodyElement.classList.remove("no-scrollbars");
-    }
-  }, [toggleMenu]);
-
-  function switchLogo(openMenu: AnimationButton) {
-    return openMenu ? (
+    return toggle ? (
       <img src={doctorCareLogoWhite} alt="Doctor Care Logo" />
     ) : (
       <img src={doctorCareLogo} alt="Doctor Care Logo" />
@@ -35,9 +22,9 @@ const Header = () => {
   }
 
   return (
-    <Navigation toggleMenu={toggleMenu}>
-      <Container backgroundColor={toggleMenu}>
-        {switchLogo(toggleMenu)}
+    <Navigation toggleMenu={toggleMenu} fixedMenu={fixedMenu}>
+      <Container>
+        {switchLogo()}
 
         <ButtonOpenMenu />
       </Container>

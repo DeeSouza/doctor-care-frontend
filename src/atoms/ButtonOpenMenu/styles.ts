@@ -45,6 +45,16 @@ const lastSpanOff = keyframes({
 
 export const Button = styled(ToggleButton.Root, {
   variants: {
+    fixedMenu: {
+      true: {
+        div: {
+          span: {
+            backgroundColor: "#FFF",
+          },
+        },
+      },
+    },
+
     animation: {
       true: {
         div: {
