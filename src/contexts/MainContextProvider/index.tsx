@@ -30,7 +30,17 @@ export const MainContextProvider = ({ children }: MainContextProps) => {
   }
 
   function handleToggleMenu() {
-    setToggleMenu((state) => !state);
+    const scrollTopWindow = window.pageYOffset;
+
+    setToggleMenu((state) => {
+      if (state && scrollTopWindow >= 150) {
+        setToggleMenu(undefined);
+
+        return;
+      }
+
+      return !state;
+    });
   }
 
   useEffect(() => {
