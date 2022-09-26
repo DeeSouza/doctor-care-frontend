@@ -10,7 +10,7 @@ export const Button = styled("button", {
   fontSize: "1.28rem",
   fontWeight: "700",
   margin: "48px auto 0",
-  border: "2px solid transparent",
+  border: "1px solid transparent",
   transition: "all 0.25s ease",
 
   a: {
@@ -21,7 +21,22 @@ export const Button = styled("button", {
 
   "&:hover": {
     backgroundColor: "transparent",
-    border: "2px solid #FFF",
+    border: "1px solid #FFF",
     color: "#FFF",
+  },
+
+  "@media screen and (min-width: 1280px)": {
+    margin: "0",
+    marginLeft: "195px",
+    backgroundColor: "transparent",
+    border: `1px solid ${theme.colors.primary}`,
+    color: theme.colors.primary,
+    fontSize: "14px",
+    padding: "10px 24px",
+
+    "&:hover": {
+      backgroundColor: theme.colors.primary,
+      color: "#FFF",
+    },
   },
 });

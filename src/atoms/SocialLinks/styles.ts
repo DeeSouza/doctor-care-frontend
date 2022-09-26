@@ -14,4 +14,8 @@ export const Container = styled("div", {
       opacity: 0.6,
     },
   },
+
+  "@media screen and (min-width: 1280px)": {
+    display: "none",
+  },
 });

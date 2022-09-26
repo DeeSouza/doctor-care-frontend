@@ -4,6 +4,14 @@ import { theme } from "styles/themes";
 export const WrapperNavigation = styled("div", {
   maxWidth: "1120px",
   margin: "auto",
+
+  "@media screen and (min-width: 1280px)": {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    flexDirection: "row",
+    height: "100%",
+  },
 });
 
 export const Navigation = styled("nav", {

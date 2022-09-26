@@ -130,4 +130,8 @@ export const Button = styled(ToggleButton.Root, {
       },
     },
   },
+
+  "@media screen and (min-width: 1280px)": {
+    display: "none",
+  },
 });

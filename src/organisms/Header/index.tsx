@@ -28,7 +28,6 @@ const Header = () => {
       <WrapperNavigation>
         <Container>
           {switchLogo()}
-
           <ButtonOpenMenu />
         </Container>
 
