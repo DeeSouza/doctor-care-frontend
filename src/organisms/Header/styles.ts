@@ -1,13 +1,18 @@
 import { styled } from "@stitches/react";
 import { theme } from "styles/themes";
 
+export const WrapperNavigation = styled("div", {
+  maxWidth: "1366px",
+  margin: "auto",
+});
+
 export const Navigation = styled("nav", {
   variants: {
     fixedMenu: {
       true: {
+        boxShadow: "#000 0px 0px 8px 0px",
         position: "fixed",
         zIndex: 1,
-        boxShadow: "#000 0px 0px 8px 0px",
 
         header: {
           backgroundColor: theme.colors.primary,

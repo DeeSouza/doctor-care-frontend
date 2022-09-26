@@ -1,7 +1,7 @@
 import { Button } from "./styles";
 import iconWhatsapp from "assets/icon-whatsapp.svg";
 
-const ButtonAppointment = () => {
+const ButtonAppointmentMenu = () => {
   return (
     <Button type="button" title="Agende uma consulta no Whatsapp">
       <img src={iconWhatsapp} alt="Ícone Whatsapp" />
@@ -10,4 +10,4 @@ const ButtonAppointment = () => {
   );
 };
 
-export default ButtonAppointment;
+export default ButtonAppointmentMenu;

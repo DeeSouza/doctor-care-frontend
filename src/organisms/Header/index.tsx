@@ -1,12 +1,14 @@
 import { useMenu } from "contexts/MainContextProvider";
 
 import ButtonOpenMenu from "atoms/ButtonOpenMenu";
+import ButtonAppointmentMenu from "atoms/ButtonAppointmentMenu";
+import SocialLinks from "atoms/SocialLinks";
 import Menu from "organisms/Menu";
 
 import doctorCareLogo from "assets/doctor-care-logo.svg";
 import doctorCareLogoWhite from "assets/doctor-care-light-logo.svg";
 
-import { Container, Navigation } from "./styles";
+import { Container, Navigation, WrapperNavigation } from "./styles";
 
 const Header = () => {
   const { toggleMenu, fixedMenu } = useMenu();
@@ -23,13 +25,17 @@ const Header = () => {
 
   return (
     <Navigation toggleMenu={toggleMenu} fixedMenu={fixedMenu}>
-      <Container>
-        {switchLogo()}
+      <WrapperNavigation>
+        <Container>
+          {switchLogo()}
 
-        <ButtonOpenMenu />
-      </Container>
+          <ButtonOpenMenu />
+        </Container>
 
-      <Menu />
+        <Menu />
+        <ButtonAppointmentMenu />
+        <SocialLinks />
+      </WrapperNavigation>
     </Navigation>
   );
 };
