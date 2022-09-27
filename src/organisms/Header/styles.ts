@@ -1,20 +1,8 @@
 import { styled } from "@stitches/react";
+import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { theme } from "styles/themes";
 
-export const WrapperNavigation = styled("div", {
-  maxWidth: "1120px",
-  margin: "auto",
-
-  "@media screen and (min-width: 1280px)": {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    flexDirection: "row",
-    height: "100%",
-  },
-});
-
-export const Navigation = styled("nav", {
+export const Navigation = styled(NavigationMenu.Root, {
   variants: {
     fixedMenu: {
       true: {
@@ -44,6 +32,10 @@ export const Navigation = styled("nav", {
   height: "0%",
   overflow: "hidden",
   transition: "all 0.25s ease-in-out",
+
+  div: {
+    height: "100%",
+  },
 });
 
 export const Container = styled("header", {
@@ -59,5 +51,18 @@ export const Container = styled("header", {
 
   img: {
     width: "132px",
+  },
+});
+
+export const WrapperNavigation = styled("div", {
+  maxWidth: "1120px",
+  margin: "auto",
+
+  "@media screen and (min-width: 1280px)": {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    flexDirection: "row",
+    height: "100%",
   },
 });

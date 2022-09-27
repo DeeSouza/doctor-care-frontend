@@ -1,6 +1,5 @@
 import React from "react";
-
-import { List, ListItem } from "organisms/Menu/styles";
+import { List, ListItem, ListLink } from "organisms/Menu/styles";
 
 const links = [
   {
@@ -27,7 +26,7 @@ const Menu = () => {
       {React.Children.toArray(
         links.map((item) => (
           <ListItem active={item.active}>
-            <a href="#">{item.text}</a>
+            <ListLink href="#">{item.text}</ListLink>
           </ListItem>
         ))
       )}
