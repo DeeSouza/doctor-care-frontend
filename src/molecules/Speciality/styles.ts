@@ -2,13 +2,15 @@ import { styled } from "@stitches/react";
 
 export const Container = styled("div", {
   padding: "24px",
+  width: "100%",
+  maxWidth: "347px",
   background: "#FFFFFF",
   border: "1px solid #DCE9E2",
   borderRadius: "6px",
-  marginBottom: "32px",
   transition: "all 0.25s ease-in",
   transform: "translateY(0)",
   boxShadow: "3px 2px 5px 0px transparent",
+  margin: "auto",
 
   "&:hover": {
     transform: "translateY(-5px)",
@@ -16,7 +18,7 @@ export const Container = styled("div", {
   },
 
   "&:last-child": {
-    marginBottom: 0,
+    margin: "0 auto 0",
   },
 
   h2: {

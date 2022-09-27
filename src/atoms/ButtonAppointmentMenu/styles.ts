@@ -9,7 +9,6 @@ export const Button = styled("button", {
   color: theme.colors.primary,
   fontSize: "1.28rem",
   fontWeight: "700",
-  margin: "48px auto 0",
   border: "1px solid transparent",
   transition: "all 0.25s ease",
 

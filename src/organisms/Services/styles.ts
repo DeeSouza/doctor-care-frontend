@@ -16,6 +16,12 @@ export const Section = styled("section", {
     fontSize: "1.875rem",
     textAlign: "center",
     fontWeight: 700,
-    marginTop: "16px",
+    maxWidth: "280px",
+    margin: "16px auto 0",
+
+    "@media screen and (min-width: 1280px)": {
+      fontSize: "2.5rem",
+      maxWidth: "440px",
+    },
   },
 });

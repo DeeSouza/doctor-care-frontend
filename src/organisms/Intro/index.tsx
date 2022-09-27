@@ -1,4 +1,4 @@
-import ButtonAppointment from "molecules/ButtonAppointment";
+import ButtonAppointment from "atoms/ButtonAppointment";
 import Stats from "molecules/Stats";
 
 import doctorCareWomanPatient from "assets/doctor-care-paciente-mulher.png";

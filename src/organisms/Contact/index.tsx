@@ -1,4 +1,4 @@
-import ButtonAppointment from "molecules/ButtonAppointment";
+import ButtonAppointment from "atoms/ButtonAppointment";
 
 import iconMap from "assets/icon-map.svg";
 import iconEmail from "assets/icon-email.svg";
