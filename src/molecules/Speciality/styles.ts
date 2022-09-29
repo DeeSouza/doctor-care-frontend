@@ -1,6 +1,7 @@
 import { styled } from "@stitches/react";
+import { motion } from "framer-motion";
 
-export const Container = styled("div", {
+export const Container = styled(motion.div, {
   padding: "24px",
   width: "100%",
   maxWidth: "347px",
@@ -13,7 +14,6 @@ export const Container = styled("div", {
   margin: "auto",
 
   "&:hover": {
-    transform: "translateY(-5px)",
     boxShadow: "3px 2px 5px 0px #cecece",
   },
 

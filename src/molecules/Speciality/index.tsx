@@ -9,7 +9,15 @@ interface Props {
 
 const Speciality = ({ title, text }: Props) => {
   return (
-    <Container>
+    <Container
+      initial={{ opacity: 0, scale: 0.9, translateY: "-15px" }}
+      animate={{ opacity: 1, scale: 1, translateY: 0 }}
+      transition={{ duration: 0.25 }}
+      whileHover={{
+        transform: "translateY(-5px)",
+        transition: { duration: 0 },
+      }}
+    >
       <img src={okIcon} alt="Ícone de OK" />
       <h2>{title}</h2>
       <p>{text}</p>
