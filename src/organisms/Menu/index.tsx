@@ -1,5 +1,6 @@
 import React from "react";
 import { List, ListItem, ListLink } from "organisms/Menu/styles";
+import { useMenu } from "contexts/MainContextProvider";
 
 const links = [
   {
@@ -21,12 +22,20 @@ const links = [
 ];
 
 const Menu = () => {
+  const { fixedMenu } = useMenu();
+
   return (
     <List>
       {React.Children.toArray(
-        links.map((item) => (
-          <ListItem active={item.active}>
-            <ListLink href="#">{item.text}</ListLink>
+        links.map(({ active, text }) => (
+          <ListItem
+            active={active}
+            fixedMenu={fixedMenu}
+            switchStyle={fixedMenu && active}
+          >
+            <ListLink href="#" fixedMenu={fixedMenu} active={active}>
+              {text}
+            </ListLink>
           </ListItem>
         ))
       )}

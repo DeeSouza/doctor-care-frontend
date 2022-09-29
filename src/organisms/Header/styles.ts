@@ -33,8 +33,10 @@ export const Navigation = styled(NavigationMenu.Root, {
   overflow: "hidden",
   transition: "all 0.25s ease-in-out",
 
-  div: {
-    height: "100%",
+  "@media screen and (min-width: 1280px)": {
+    div: {
+      height: "100%",
+    },
   },
 });
 

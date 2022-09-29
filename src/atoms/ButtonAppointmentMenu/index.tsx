@@ -1,7 +1,10 @@
+import { useMenu } from "contexts/MainContextProvider";
 import { Button } from "./styles";
 
 const ButtonAppointment = () => {
-  return <Button>AGENDAR CONSULTA</Button>;
+  const { fixedMenu } = useMenu();
+
+  return <Button fixedMenu={fixedMenu}>AGENDAR CONSULTA</Button>;
 };
 
 export default ButtonAppointment;

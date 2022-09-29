@@ -6,6 +6,7 @@ export const List = styled(NavigationMenu.List, {
   paddingTop: "60px",
   textAlign: "center",
   listStyle: "none",
+  marginBottom: "48px",
 
   "@media screen and (min-width: 1280px)": {
     display: "flex",
@@ -15,6 +16,7 @@ export const List = styled(NavigationMenu.List, {
     paddingTop: "0",
     gap: "32px",
     height: "100%",
+    marginBottom: 0,
   },
 });
 
@@ -22,13 +24,35 @@ export const ListItem = styled(NavigationMenu.Item, {
   variants: {
     active: {
       true: {
-        borderBottom: `2px solid ${theme.colors.primary}`,
-
-        a: {
-          fontWeight: 700,
+        "@media screen and (min-width: 1280px)": {
+          borderBottom: `2px solid ${theme.colors.primary}`,
         },
       },
     },
+
+    fixedMenu: {
+      true: {
+        "@media screen and (min-width: 1280px)": {
+          "&:hover": {
+            borderBottom: `2px solid ${theme.colors.gray100}`,
+          },
+        },
+      },
+    },
+
+    switchStyle: {
+      true: {
+        "@media screen and (min-width: 1280px)": {
+          borderBottom: `2px solid ${theme.colors.gray100}`,
+        },
+      },
+    },
+  },
+
+  defaultVariants: {
+    active: false,
+    fixedMenu: false,
+    switchStyle: false,
   },
 
   height: "100%",
@@ -55,6 +79,30 @@ export const ListItem = styled(NavigationMenu.Item, {
 });
 
 export const ListLink = styled(NavigationMenu.Link, {
+  variants: {
+    active: {
+      true: {
+        "@media screen and (min-width: 1280px)": {
+          fontWeight: 700,
+          opacity: 1,
+        },
+      },
+      false: {
+        "@media screen and (min-width: 1280px)": {
+          opacity: 0.7,
+        },
+      },
+    },
+
+    fixedMenu: {
+      true: {
+        "@media screen and (min-width: 1280px)": {
+          color: theme.colors.gray100,
+        },
+      },
+    },
+  },
+
   fontSize: "1.7rem",
   fontWeight: 700,
   color: "#FFF",
@@ -63,13 +111,12 @@ export const ListLink = styled(NavigationMenu.Link, {
   "@media screen and (min-width: 1280px)": {
     fontSize: "1.143rem",
     color: theme.colors.primary,
-    fontWeight: "normal",
+    fontWeight: 400,
     paddingTop: "2px",
     transition: "all 0.25s ease-in",
-    opacity: 1,
 
     "&:hover": {
-      opacity: 0.6,
+      opacity: 1,
     },
   },
 });
