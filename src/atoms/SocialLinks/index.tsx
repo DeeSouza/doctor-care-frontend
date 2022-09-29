@@ -4,9 +4,14 @@ import instagramIcon from "assets/instagram.svg";
 import facebookIcon from "assets/facebook.svg";
 import youtubeIcon from "assets/youtube.svg";
 
-const SocialLinks = () => {
+interface Props {
+  align?: "left" | "center";
+  show?: boolean;
+}
+
+const SocialLinks = ({ align, show }: Props) => {
   return (
-    <Container>
+    <Container align={align} show={show}>
       <a href="#">
         <img src={instagramIcon} alt="Instagram - Doctor Care" />
       </a>

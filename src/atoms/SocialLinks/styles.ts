@@ -1,11 +1,32 @@
 import { styled } from "@stitches/react";
 
 export const Container = styled("div", {
+  variants: {
+    align: {
+      left: {
+        justifyContent: "flex-start",
+      },
+      center: {
+        justifyContent: "center",
+      },
+    },
+    show: {
+      false: {
+        "@media screen and (min-width: 1280px)": {
+          display: "none",
+        },
+      },
+    },
+  },
+
+  defaultVariants: {
+    align: "center",
+    show: true,
+  },
+
   display: "flex",
-  justifyContent: "center",
   flexDirection: "row",
   gap: "32px",
-  marginTop: "80px",
 
   a: {
     transition: "all 0.25 ease-in-out",
@@ -13,9 +34,5 @@ export const Container = styled("div", {
     "&:hover": {
       opacity: 0.6,
     },
-  },
-
-  "@media screen and (min-width: 1280px)": {
-    display: "none",
   },
 });

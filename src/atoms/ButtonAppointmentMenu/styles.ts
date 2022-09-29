@@ -22,7 +22,7 @@ export const Button = styled("button", {
   backgroundColor: "#FFF",
   padding: "16px 32px",
   display: "block",
-  margin: "0 auto",
+  margin: "0 auto 80px",
   borderRadius: "40px",
   color: theme.colors.primary,
   fontSize: "1.28rem",
@@ -43,8 +43,7 @@ export const Button = styled("button", {
   },
 
   "@media screen and (min-width: 1280px)": {
-    margin: "0",
-    marginLeft: "195px",
+    margin: "0 auto 0 195px",
     backgroundColor: "transparent",
     border: `1px solid ${theme.colors.primary}`,
     color: theme.colors.primary,

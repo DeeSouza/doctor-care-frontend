@@ -33,7 +33,7 @@ const Header = () => {
 
         <Menu />
         <ButtonAppointmentMenu />
-        <SocialLinks />
+        <SocialLinks show={false} />
       </WrapperNavigation>
     </Navigation>
   );
