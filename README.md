@@ -1,4 +1,8 @@
-# Doctor Care Project Frontend - Working in Progress
+# Doctor Care Project Frontend
+
+<img src="./cover-doctor-care.png" alt="Cover Doctor Care" width="600" />
+
+---
 
 ### Techs Used
 

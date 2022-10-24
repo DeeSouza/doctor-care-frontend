@@ -3,12 +3,9 @@ import { theme } from "../../styles/themes";
 
 export const Section = styled("section", {
   backgroundColor: theme.colors.gray100,
-  padding: "0 24px 100px",
-  marginTop: "-218px",
-  paddingTop: " 218px",
+  padding: "100px 24px 100px",
 
   "> h2": {
-    marginTop: "100px",
     textAlign: "center",
   },
 
@@ -23,5 +20,9 @@ export const Section = styled("section", {
       fontSize: "2.5rem",
       maxWidth: "440px",
     },
+  },
+
+  "@media screen and (min-width: 768px)": {
+    padding: "160px 24px 100px",
   },
 });

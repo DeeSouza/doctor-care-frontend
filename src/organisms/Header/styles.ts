@@ -54,6 +54,10 @@ export const Container = styled("header", {
   img: {
     width: "132px",
   },
+
+  "@media screen and (min-width: 1168px)": {
+    padding: "24px 0",
+  },
 });
 
 export const WrapperNavigation = styled("div", {

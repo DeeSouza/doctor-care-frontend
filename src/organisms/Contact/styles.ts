@@ -1,9 +1,24 @@
 import { styled } from "@stitches/react";
 import { theme } from "../../styles/themes";
 
-export const Section = styled("section", {
+const SectionContainer = styled("section", {
   padding: "100px 24px",
   backgroundColor: "#FFFFFF",
+});
+
+const SectionWrapper = styled("div", {
+  maxWidth: "1120px",
+  margin: "auto",
+
+  "@media screen and (min-width: 768px)": {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+});
+
+const SectionDescription = styled("section", {
+  maxWidth: "320px",
 
   h2: {
     fontSize: "30px",
@@ -31,9 +46,25 @@ export const Section = styled("section", {
       },
     },
   },
+});
 
-  "> img": {
-    maxWidth: "100%",
+const SectionImage = styled("div", {
+  width: "100%",
+  maxWidth: "575px",
+
+  img: {
     marginTop: "60px",
+    width: "100%",
+
+    "@media screen and (min-width: 768px)": {
+      marginTop: 0,
+    },
   },
 });
+
+export const Section = {
+  Root: SectionContainer,
+  Wrapper: SectionWrapper,
+  Description: SectionDescription,
+  Image: SectionImage,
+};

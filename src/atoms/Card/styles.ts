@@ -4,6 +4,7 @@ import { theme } from "../../styles/themes";
 export const Container = styled("div", {
   display: "flex",
   flexDirection: "column",
+  position: "relative",
 
   strong: {
     fontSize: "3rem",
@@ -15,5 +16,15 @@ export const Container = styled("div", {
     fontSize: "1rem",
     fontWeight: 400,
     color: theme.colors.primary,
+  },
+
+  "@media screen and (min-width: 968px)": {
+    strong: {
+      fontSize: "3.429rem",
+    },
+
+    small: {
+      fontSize: "1.143rem",
+    },
   },
 });

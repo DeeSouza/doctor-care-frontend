@@ -7,29 +7,30 @@ import { Section } from "./styles";
 
 const Intro = () => {
   return (
-    <Section>
-      <div>
-        <h6>BOAS-VINDAS A DOCTORCARE 👋</h6>
+    <Section.Root>
+      <Section.Wrapper>
+        <Section.Intro>
+          <h6>BOAS-VINDAS A DOCTORCARE 👋</h6>
+          <h1>Assistência médica simplificada para todos</h1>
 
-        <h1>Assistência médica simplificada para todos</h1>
+          <h5>
+            Os médicos da DoctorCare vão além dos sintomas para tratar a causa
+            raiz de sua doença e proporcionar uma cura a longo prazo.
+          </h5>
 
-        <h5>
-          Os médicos da DoctorCare vão além dos sintomas para tratar a causa
-          raiz de sua doença e proporcionar uma cura a longo prazo.
-        </h5>
+          <ButtonAppointment />
+        </Section.Intro>
 
-        <ButtonAppointment />
-      </div>
-
-      <div>
-        <img
-          src={doctorCareWomanPatient}
-          alt="Doctor Care - Mulher Paciente Sorrindo"
-        />
-      </div>
+        <Section.Image>
+          <img
+            src={doctorCareWomanPatient}
+            alt="Doctor Care - Mulher Paciente Sorrindo"
+          />
+        </Section.Image>
+      </Section.Wrapper>
 
       <Stats />
-    </Section>
+    </Section.Root>
   );
 };
 
