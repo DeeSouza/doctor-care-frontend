@@ -15,6 +15,11 @@ const SectionWrapper = styled("div", {
     display: "flex",
     justifyContent: "space-between",
     flexDirection: "row",
+    padding: "0 24px",
+  },
+
+  "@media screen and (min-width: 1168px)": {
+    padding: 0,
   },
 });
 
