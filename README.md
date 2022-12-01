@@ -1,18 +1,18 @@
 # Doctor Care Project Frontend
 
-<img src="./cover-doctor-care.png" alt="Cover Doctor Care" width="600" />
+<img src="./cover-doctor-care.png" alt="Cover Doctor Care" />
 
 ---
 
 ### Techs Used
 
-* Radix UI
-* Stitches UI
-* ViteJS
+- Radix UI
+- Stitches UI
+- ViteJS
 
 ### Requirements
 
-* Node v14.17.6
+- Node v14.17.6
 
 If you had `nvm`, only run in the terminal the command below:
 
